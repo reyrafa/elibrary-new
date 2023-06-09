@@ -1,0 +1,211 @@
+{
+  "collections" : {
+    "-Mz_J4bPSira3mAYxEpX" : {
+      "author" : "Rey, Hayes",
+      "call_num" : "250",
+      "collection_status" : "1",
+      "datePublish" : "2022-04-19",
+      "filelink" : "https://firebasestorage.googleapis.com/v0/b/buksuelibrary-ea72d.appspot.com/o/collection%2FAng%20Apat%20na%20Himagsik%20ni%20Francisco%20Balagtas%20at%20Ib%C3%A1%20pang%20Sanaysay%20(%20PDFDrive%20).pdf?alt=media&token=b06caad7-b9e4-40d8-8ac2-b2cdb70381a3",
+      "id" : "2",
+      "isbn" : "956522365889562",
+      "location" : "2",
+      "page_num" : "500",
+      "permission" : "1",
+      "section" : "2",
+      "subject" : "5",
+      "title" : "The Ghost"
+    }
+  },
+  "locations" : [{
+    "id" : "1",
+    "location" : "Elementary SL Library"
+  }, {
+    "id" : "2",
+    "location" : "Elementary SL Library"
+  },{
+    "id": "3",
+    "location" : "Main Library"
+  }
+  ,{
+    "id": "4",
+    "location" : "Graduate Library"
+  }
+	 ],
+   "sections" :[{
+     "id" : "1",
+     "section" : "Filipiniana"
+   },{
+    "id" : "2",
+    "section" : "General Circulation"
+  },{
+    "id" : "3",
+    "section" : "References"
+  },{
+    "id" : "4",
+    "section" : "Reserve"
+  },{
+    "id" : "5",
+    "section" : "Periodicals"
+  }],
+  "subject":[{
+    "id": "1",
+    "subject": "Science"
+  },{
+    "id": "2",
+    "subject": "Filipino"
+  },{
+    "id": "3",
+    "subject": "Mathemathics"
+  },{
+    "id": "4",
+    "subject": "Social Science"
+  },{
+    "id": "5",
+    "subject": "Biology"
+  },{
+    "id": "6",
+    "subject": "Techonology"
+  },{
+    "id": "7",
+    "subject": "English Literature"
+  },{
+    "id": "8",
+    "subject": "History"
+  },{
+    "id": "9",
+    "subject": "Environmental Science"
+  },{
+    "id": "10",
+    "subject": "Education"
+  },{
+    "id": "11",
+    "subject": "Sociology"
+  }],
+  "college":[{
+    "id":"1",
+    "college":"College of Technologies"
+  }
+  ,{
+    "id":"2",
+    "college":"College of Business"
+  },{
+    "id":"3",
+    "college":"College of Nursing"
+  },{
+    "id":"4",
+    "college":"College of Law"
+  },{
+    "id":"5",
+    "college":"College of Education"
+  },{
+    "id":"6",
+    "college":"College of Art and Sciences"
+  },{
+    "id":"7",
+    "college":"College of Administration"
+  }],
+  "courses": [{
+    "id":"1",
+    "college_id":"1",
+    "college":"Bachelor Of Science in Information Technology"
+  },{
+    "id":"2",
+    "college_id":"1",
+    "college":"Bachelor Of Science in Entertainment and Multimedia Computing major in Digital Animation"
+  },{
+    "id":"3",
+    "college_id":"1",
+    "college":"Bachelor Of Science in Automotive Technology"
+  },{
+    "id":"4",
+    "college_id":"1",
+    "college":"Bachelor Of Science in Electronics Technology"
+  },{
+    "id":"5",
+    "college_id":"1",
+    "college":"Bachelor Of Science in Food Technology"
+  },{
+    "id":"6",
+    "college_id":"2",
+    "college":"Bachelor Of Science in Hospitality Management"
+  },{
+    "id":"7",
+    "college_id":"2",
+    "college":"Bachelor Of Science in Business Administration"
+  },{
+    "id":"8",
+    "college_id":"2",
+    "college":"Bachelor Of Science in Accountancy"
+  },{
+    "id":"9",
+    "college_id":"3",
+    "college":"Bachelor Of Science in Nursing"
+  },{
+    "id":"10",
+    "college_id":"4",
+    "college":"Bachelor Of Science in Law"
+  },{
+    "id":"11",
+    "college_id":"5",
+    "college":"Bachelor Of Science in Physical Education"
+  },{
+    "id":"12",
+    "college_id":"5",
+    "college":"Bachelor Of Science in Secondary Education"
+  },{
+    "id":"13",
+    "college_id":"5",
+    "college":"Bachelor Of Science in Elementary Education"
+  },{
+    "id":"14",
+    "college_id":"5",
+    "college":"Bachelor Of Science in Childhood Education"
+  },{
+    "id":"15",
+    "college_id":"6",
+    "college":"Bachelor Of Science in Biology major in Biotechnology"
+  },{
+    "id":"16",
+    "college_id":"6",
+    "college":"Bachelor Of Science in Environmental Science Major in Environmental Heritage Studies"
+  },{
+    "id":"17",
+    "college_id":"6",
+    "college":"Bachelor Of Science in English Language"
+  },{
+    "id":"18",
+    "college_id":"6",
+    "college":"Bachelor Of Science in Economics"
+  },{
+    "id":"19",
+    "college_id":"6",
+    "college":"Bachelor Of Science in Sociology"
+  },{
+    "id":"20",
+    "college_id":"6",
+    "college":"Bachelor Of Science in Philosophy"
+  },{
+    "id":"21",
+    "college_id":"6",
+    "college":"Bachelor Of Science in Social Science"
+  },{
+    "id":"22",
+    "college_id":"6",
+    "college":"Bachelor Of Science in Mathematics"
+  },{
+    "id":"23",
+    "college_id":"6",
+    "college":"Bachelor Of Science in Community Development"
+  },{
+    "id":"24",
+    "college_id":"6",
+    "college":"Bachelor Of Science in Development Communication"
+  },{
+    "id":"25",
+    "college_id":"7",
+    "college":"Bachelor Public Administration mahor in Local Governance"
+  }],
+  "students":"",
+  "student_read_collection":"",
+  "student_download_collection":""
+}
