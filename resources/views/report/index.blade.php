@@ -9,25 +9,25 @@
             <div class="col-md-2">
                 <a href="/admin/user/report/personal/report" class="btn btn-secondary">Personal Add Report</a>
             </div>
-            @foreach($librarian as $librarian_info)
-                @if($librarian_info->role_id == '1')
+            @foreach ($librarian as $librarian_info)
+                @if ($librarian_info->role_id == '1')
                     <div class="col-md-2">
                         <a href="/user/collection/report" class="btn btn-secondary">Added Collection Report</a>
                     </div>
                 @endif
             @endforeach
-            
+
             <div class="col-md-2">
                 <a href="/registered/student/report" class="btn btn-secondary">Registered Student Report</a>
             </div>
             <div class="col-md-2">
-                <a href="#" class="btn btn-secondary">Student Read and Download Report</a>
+                <a href="/student/read/download/report" class="btn btn-secondary">Student Read and Download Report</a>
             </div>
-            <div class="col-md-2">
+            {{-- <div class="col-md-2">
                 <a href="#" class="btn btn-secondary">Collection Stat Report</a>
-            </div>
+            </div> --}}
             <div class="col-md-2">
-                <a href="#" class="btn btn-secondary">College and Course Report</a>
+                <a href="/college/course/report" class="btn btn-secondary">College and Course Report</a>
             </div>
         </div>
     </div>
@@ -37,12 +37,13 @@
                 <h1 style="font-size: 20px;">Add, Delete, and Restore Collection Statistics</h1>
             </div>
             <div class="col-md-6">
-                <h1 style="text-align: center; text-transform:uppercase" class="mb-2 text-primary">librarian Adds Per Day</h1>
+                <h1 style="text-align: center; text-transform:uppercase" class="mb-2 text-primary">librarian Adds Per
+                    Day</h1>
                 {!! $chart1->renderHtml() !!}
             </div>
             <div class="col-md-6">
-            <h1 style="text-align: center; text-transform:uppercase" class="mb-2 text-danger">Deleted Per Day</h1>
-            {!! $chart_delete->renderHtml() !!}
+                <h1 style="text-align: center; text-transform:uppercase" class="mb-2 text-danger">Deleted Per Day</h1>
+                {!! $chart_delete->renderHtml() !!}
             </div>
         </div>
     </div>
@@ -50,12 +51,11 @@
     {!! $chart1->renderJs() !!}
     {!! $chart_delete->renderChartJsLibrary() !!}
     {!! $chart_delete->renderJs() !!}
-@push('script')
-<script>
-    $(document).ready(function(){
-      
-    })
+    @push('script')
+        <script>
+            $(document).ready(function() {
 
-</script>
-@endpush
+            })
+        </script>
+    @endpush
 </x-app-layout>

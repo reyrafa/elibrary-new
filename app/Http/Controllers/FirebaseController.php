@@ -40,21 +40,23 @@ class FirebaseController extends Controller
          $counter_alltime =0;
 
 
+       
         //getting the registered per day, week, month, etc.
         foreach($student as $key => $added_info){
-            if (\date('Y-m-d',\strtotime($added_info['created_at'])) == Carbon::now()->toDateString()){
+
+            if (\date('m/d/yyyy',\strtotime($added_info['createdDate'])) == Carbon::now()->toDateString()){
                   ++$counter_day;
                  
             }
-            if (Carbon::parse($added_info['created_at'])->endOfWeek() == Carbon::now()->endOfWeek()){
+            if (Carbon::parse($added_info['createdDate'])->endOfWeek() == Carbon::now()->endOfWeek()){
               ++$counter_week;
             
               }
-            if (Carbon::parse($added_info['created_at'])->format('F') == Carbon::now()->format('F')){
+            if (Carbon::parse($added_info['createdDate'])->format('F') == Carbon::now()->format('F')){
                 ++$counter_month;
                
                 }
-            if (Carbon::parse($added_info['created_at'])->format('Y') == Carbon::now()->format('Y')){
+            if (Carbon::parse($added_info['createdDate'])->format('Y') == Carbon::now()->format('Y')){
 
                 ++$counter_year;
                 }

@@ -160,12 +160,12 @@ class AdminController extends Controller
             'isbn' => $request->isbn,
             'call_num'=> $request->call_number,
             'page_num' => $request->page_num,
-            'location' => $request->location,
-            'section' => $request->section,
-            'datePublish' => $request->date_publish,
-            'subject' => $request->subject,
+            'location_id' => $request->location,
+            'section_id' => $request->section,
+            'date_publish' => $request->date_publish,
+            'subject_id' => $request->subject,
             'collection_status' => '1',
-            'permission'=> $request->permission,
+            'permission_id'=> $request->permission,
             'filelink' => $request->file_url
 
         ];
@@ -229,12 +229,12 @@ class AdminController extends Controller
             'isbn' => $request->isbn,
             'call_num'=> $request->call_number,
             'page_num' => $request->page_num,
-            'location' => $request->location,
-            'section' => $request->section,
-            'datePublish' => $request->date_publish,
-            'subject' => $request->subject,
+            'location_id' => ($request->location)-1,
+            'section_id' => ($request->section)-1,
+            'date_publish' => $request->date_publish,
+            'subject_id' => ($request->subject)-1,
             'collection_status' => '1',
-            'permission'=> $request->permission,
+            'permission_id'=> $request->permission,
             'filelink' => $request->file_url
 
         ];

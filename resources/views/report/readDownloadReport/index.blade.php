@@ -73,31 +73,32 @@
                         @forelse ($read_report as $key=>$item)
                             <tr>
                                 @foreach($student as $studentKey=>$studentItem)
-                                    @if($item['student_id'] == $studentItem['key'])
+
+                                    @if($item['student_id'] == $studentKey)
                                         <td>{{$studentItem['firstname']}}</td>
                                         <td>{{$studentItem['lastname']}}</td>
                                         <td>{{$studentItem['middlename']}}</td>
                                     @endif
                                 @endforeach
                                 @foreach($collection as $collectionKey=>$collectionItem)
-                                    @if($item['collection_id'] == $collectionItem['key'])
+                                    @if($item['collection_id'] == $collectionKey)
                                         <td>{{$collectionItem['title']}}</td>
                                         <td>{{$collectionItem['author']}}</td>
                                    
                                         @foreach($location as $locationKey=>$locationItem)
-                                            @if($collectionItem['location'] == $locationItem['id'])
+                                            @if($collectionItem['location_id'] == $locationKey)
                                             <td>{{$locationItem['location']}}</td>
                                             @endif
                                         @endforeach
 
                                         @foreach($section as $sectionKey=>$sectionItem)
-                                            @if($collectionItem['section'] == $sectionItem['id'])
+                                            @if($collectionItem['section_id'] == $sectionKey)
                                             <td>{{$sectionItem['section']}}</td>
                                             @endif
                                         @endforeach
 
                                         @foreach($subject as $subjectKey=>$subjectItem)
-                                            @if($collectionItem['subject'] == $subjectItem['id'])
+                                            @if($collectionItem['subject_id'] == $subjectKey)
                                             <td>{{$subjectItem['subject']}}</td>
                                             @endif
                                         @endforeach
@@ -186,31 +187,31 @@
                         @forelse ($download_report as $downloadkey=>$downloaditem)
                             <tr>
                                 @foreach($student as $studentKey=>$studentItem)
-                                    @if($downloaditem['student_id'] == $studentItem['key'])
-                                        <td>{{$studentItem['firstname']}}</td>
+                                    @if($downloaditem['student_id'] == $studentKey)
+                                        <td>{{$studentItem['firstname']}} {{$downloadkey}}</td>
                                         <td>{{$studentItem['lastname']}}</td>
                                         <td>{{$studentItem['middlename']}}</td>
                                     @endif
                                 @endforeach
                                 @foreach($collection as $collectionKey=>$collectionItem)
-                                    @if($downloaditem['collection_id'] == $collectionItem['key'])
-                                        <td>{{$collectionItem['title']}}</td>
+                                    @if($downloaditem['collection_id'] == $collectionKey)
+                                        <td>{{$collectionItem['title']}}{{$collectionKey}}</td>
                                         <td>{{$collectionItem['author']}}</td>
                                    
                                         @foreach($location as $locationKey=>$locationItem)
-                                            @if($collectionItem['location'] == $locationItem['id'])
+                                            @if($collectionItem['location_id'] == $locationKey)
                                             <td>{{$locationItem['location']}}</td>
                                             @endif
                                         @endforeach
 
                                         @foreach($section as $sectionKey=>$sectionItem)
-                                            @if($collectionItem['section'] == $sectionItem['id'])
+                                            @if($collectionItem['section_id'] == $sectionKey)
                                             <td>{{$sectionItem['section']}}</td>
                                             @endif
                                         @endforeach
 
                                         @foreach($subject as $subjectKey=>$subjectItem)
-                                            @if($collectionItem['subject'] == $subjectItem['id'])
+                                            @if($collectionItem['subject_id'] == $subjectKey)
                                             <td>{{$subjectItem['subject']}}</td>
                                             @endif
                                         @endforeach

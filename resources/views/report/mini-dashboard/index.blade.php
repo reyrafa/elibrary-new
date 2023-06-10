@@ -17,9 +17,9 @@
             <div class="col-md-2 link4">
                 <a href="/student/read/download/report" class="btn btn-secondary ">Student Read and Download Report</a>
             </div>
-            <!--<div class="col-md-2">
+            {{--<div class="col-md-2">
                 <a href="/collection/stat/report" class="btn btn-secondary">Collection Stat Report</a>
-            </div>-->
+            </div>--}}
             <div class="col-md-2 link5">
                 <a href="/college/course/report" class="btn btn-secondary">College and Course Report</a>
             </div>

@@ -70,7 +70,7 @@
                         <th>College</th>
                         <th>Course</th>
                         <th>Date Registered</th>
-                        <th>Last Update</th>
+                       {{-- <th>Last Update</th> --}} 
                     </thead>
                     <tbody>
                         @forelse ($student as $key=>$item)
@@ -80,13 +80,13 @@
                             <td>{{$item['middlename']}}</td>
                             <td>{{$item['college']}}</td>
                             <td>{{$item['course']}}</td>
-                            <td>{{date('D, M d, Y h:i A',strtotime($item['created_at']))}}</td>
+                            <td>{{date('D, M d, Y h:i A',strtotime($item['createdDate']))}}</td>
 
-                            @if($item['updated_at'] != '')
+                           {{--  @if($item['updated_at'] != '')
                             <td class="text-primary">{{\Carbon\Carbon::parse($item['updated_at'])->diffForHumans()}}</td>
                             @else
                             <td></td>
-                            @endif
+                            @endif --}}
                         </tr>
                         @empty
                         <tr>
